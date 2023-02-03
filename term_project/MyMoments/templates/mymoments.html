@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{{ object.date }}</h2>
+    <p>{{ object.moment }}</p>
+    <p><a href="/MyMoments/{{ object.id }}/update/">Edit</a></p>
+    <p><a href="/MyMoments/{{ object.id }}/delete/">Delete</a></p>
+    <p><a href="../">Back</a></p>
+{% endblock %}

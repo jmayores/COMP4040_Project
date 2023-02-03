@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>List of Moments</h1>
+{% for instance in object_list %}
+  <p><a href="{{ instance.get_absolute_url_detail }}">{{ instance.id }}</a> - {{ instance.date }}</p>
+{% endfor %}
+
+{% endblock %}
